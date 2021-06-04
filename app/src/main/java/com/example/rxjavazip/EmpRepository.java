@@ -19,7 +19,7 @@ import io.reactivex.schedulers.Schedulers;
 
 public class EmpRepository {
 
-    private MutableLiveData<List<String>> liveData = new MutableLiveData<>();
+    private final MutableLiveData<List<String>> liveData = new MutableLiveData<>();
 
     @SuppressLint("CheckResult")
     LiveData<List<String>> getData(EmpService empService) {
